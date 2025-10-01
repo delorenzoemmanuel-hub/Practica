@@ -46,5 +46,6 @@ colegio = Jardin("jardin", "fuxia")
 print(f" hola soy, {valentino.nombre},tengo {valentino.edad} años de edad,{valentino.hablar()} {emmanuel.nombre} y tiene {emmanuel.edad}, mi mama es , {natalia.nombre} y tiene {natalia.edad} años de edad")    
 
 
+print(f" voy al {colegio.nombre}, a la salita {colegio.salita}")
     
 
