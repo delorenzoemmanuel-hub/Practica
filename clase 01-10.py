@@ -1,10 +1,13 @@
 import json
 base_datos = [
-  "Nombre,Apellido,Edad",
-  "Emiliano Alejandro,Billi,43",
-  "Peter,Fonda,102",
-  "Mirtha,Legrand,98",
-  "Cesar,Billi,11"
+    "Nombre,Apellido,Edad,Nacionalidad,estado_civil",
+    "Emiliano Alejandro,Billi,43,Argentino,Casado",
+    "Peter,Fonda,102",
+    "Mirtha,Legrand,98",
+    "Cesar,Billi,11",
+    "Emmanuel,Delorenzo,36",
+    "pepe,pepito,88",
+    "pepe,argento,54"
 ]
 
 keys = base_datos[0].split(",")
