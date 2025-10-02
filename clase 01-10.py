@@ -1,18 +1,26 @@
-class Persona:
-    def __init__(self,nombre,apellido,edad):
-        self.nombre = nombre
-        self.apellido = apellido
-        self.edad = edad
-
-
-
-
+import json
 base_datos = [
-    "Nombre,Apellido,Edad",
-    "Emmiliano,Billi,43"
-    "Emmanuel,Delorenzo,34",
-    "cesar,Billi,11"]
+  "Nombre,Apellido,Edad",
+  "Emiliano Alejandro,Billi,43",
+  "Peter,Fonda,102",
+  "Mirtha,Legrand,98",
+  "Cesar,Billi,11"
+]
 
-s = "cesar,Billi,11"
-valores = s.split(",")
-print(valores)
+keys = base_datos[0].split(",")
+
+dict_db = []
+i = 1
+while i < len(base_datos):
+  values = base_datos[i]
+  values = values.split(",")
+  d = {
+    keys[0] : values[0],
+    keys[1] : values[1],
+    keys[2] : values[2]
+  }
+  print(d)
+  dict_db.append(d)
+  i = i + 1
+print(dict_db)
+json_db = json.dumps(dict_db)
