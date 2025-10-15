@@ -1,0 +1,15 @@
+class csv2json(object):
+    def __init__(self,atributos):
+        self.carly = atributos
+
+    def todict(self,values):
+        if len(values) != len(self.carly):
+            return None
+        
+        d = {}
+        i = 0
+        while i < len(values):
+            d [self.carly[i]] = values[i]
+            i = i + 1
+    
+        return d
